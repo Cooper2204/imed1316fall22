@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #171717;
+}
+
+/* Style the header */
+header {
+  background-color: #212121
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: #212121;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #212121;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #7D7D7D;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+a:link {
+    color: #129DAA;
+}
+a:visited {
+    color: #129DAA;
+}
+a:hover {
+    color: #129DAA;
+}
+a:active {
+    color: #129DAA;
+}
+body,td,th {
+    color: #129DAA;
+}
+</style>
+</head>
+<body bgcolor="#171717">
+
+<header>
+  <h2>About</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="instagram.com/thecoopermcdaniel">Instagram Personal</a></li>
+      <li><a href="#">Instagram Busniness</a></li>
+      <li><a href="mail.google.com">Email</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>Who am I?</h1>
+    <p>My name is Cooper McDaniel and I am the owner and creator of CMD Media and Marketing Company. </p>
+    <p>I started this business out to help companies and people advertise their brands and/or digitalize their brand. My goal is to provide quality work for you. If you are not happy then refunds and fixing sessions can be arranged. If you aren't happy, then neither are we.</p>
+  </article>
+</section>
+
+<footer>
+  <p>CMD Media and Marketing CO. 2022</p>
+</footer>
+
+</body>
+</html>
+
+
