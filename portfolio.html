@@ -2,14 +2,8 @@
 <html>
 <head>
 	<link rel="icon" type="image/x-icon" href="20221104_140039_0000.png">
-<style>
-#myHeader {
-  background-color: darkcyan;
-  color: black;
-  padding: 30px;
-  text-align: center;
-}
-body {
+	<style type="text/css">
+	body {
     background-color: #171717;
 }
 a:link {
@@ -28,41 +22,95 @@ a:active {
     text-decoration: none;
     color: #129DAA;
 }
-	footer {
-  background-color: #7D7D7D;
-  padding: 10px;
-  text-align: center;
-  color: white;
+    body,td,th {
+    color: #129DAA;
 }
-	<canvas id="myCanvas" width="200" height="100"></canvas>
-	<script>
-var c = document.getElementById("myCanvas");
-var ctx = c.getContext("2d");
+		
+* {
+  box-sizing: border-box;
+}
 
-// Create gradient
-var grd = ctx.createLinearGradient(0, 0, 200, 0);
-grd.addColorStop(0, "cyan");
-grd.addColorStop(1, "gray");
+body {
+  margin: 0;
+  =
+}
 
-// Fill with gradient
-ctx.fillStyle = grd;
-ctx.fillRect(10, 10, 150, 80);
-</script>
-</style>
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+    </style>
 <meta charset="utf-8">
 </head>
-<body>
-	 <h3 style="color:#129DAA text-align: center"><a href="index.html">&nbsp; &nbsp; &nbsp; Home&nbsp;&nbsp;</a> <a href="servicespage.html">Services&nbsp; &nbsp;</a><a href="contacts.html">Contact</a> <a>&nbsp; &nbsp;</a><a href="portfolio.html">Portfolio</a><a>&nbsp; &nbsp; </a><a href="page5.html">Experience&nbsp; &nbsp;</a><a href="about.html">About</a></h3>
-<h1 id="myHeader">Portfolio&nbsp; &nbsp; &nbsp;</h1>
-<script>
-document.getElementById("demo").innerHTML = "Hello JavaScript!";
-</script>
-	<h1 style="color:#FFFFFF">Some of My Work:</h1>
-	<img src="images/glitcheffect.png" alt="Glitch" />
-		<img src="images/flowerprojectcoopermcdaniel.jpg" alt="Flower" />
-	<img src="images/leavingalegacydesignslogo.png" alt="Legacy Logo" />
-	
-	<footer>
+<body bgcolor="#171717" text="#129DAA">
+<h3 style="color:#129DAA text-align: center"><a href="index.html">&nbsp; &nbsp; &nbsp; Home&nbsp;&nbsp;</a> <a href="servicespage.html">Services&nbsp; &nbsp;</a><a href="contacts.html">Contact</a> <a>&nbsp; &nbsp;</a><a href="portfolio.html">Portfolio</a><a>&nbsp; &nbsp; </a><a href="page5.html">Experience&nbsp; &nbsp;</a><a href="about.html">About</a></h3>
+<!-- Header -->
+<div class="header">
+  <h1 style="color: #FFFFFF">Portfolio</h1>
+  <p style="color: #FFFFFF">Some of my projects and photography work.</p>
+</div>
+
+<!-- Photo Grid -->
+<div class="row"> 
+  <div class="column">
+    <img src="file:///C:/Users/super/Documents/GitHub/imed1316fall22/images/glitcheffect.png" style="width:100%" alt="one">
+    <img src="file:///C:/Users/super/Documents/GitHub/imed1316fall22/images/flowerprojectcoopermcdaniel.jpg" style="width:100%" alt="two">
+    <img src="file:///C:/Users/super/Documents/GitHub/imed1316fall22/images/leavingalegacydesignslogo.png" style="width:100%" alt="three">
+  </div>
+  
+  <div class="column">
+    <img src="file:///C:/Users/super/Documents/GitHub/imed1316fall22/images/CooperMcDanielSpringBreak202203182022_0610.JPG" style="width:100%" alt="one">
+    <img src="file:///C:/Users/super/Documents/GitHub/imed1316fall22/images/White%20Minimalist%20Business%20Invoice.png" style="width:100%" alt="two">
+  </div> 
+   
+  <div class="column">
+    <img src="file:///C:/Users/super/Documents/GitHub/imed1316fall22/images/Untitled%20design%20(4).png" style="width:100%" alt="one">
+    <img src="file:///C:/Users/super/Documents/GitHub/imed1316fall22/images/White%20Cake%20Photo%20Collage%20Bakery%20Menu.png" style="width:100%" alt="two">
+    <img src="file:///C:/Users/super/Documents/GitHub/imed1316fall22/images/7_4_2022,%208_57_20%20PM.jpg" style="width:100%" alt="three">
+  </div>
+  
+  <div class="column">
+    <img src="file:///C:/Users/super/Documents/GitHub/imed1316fall22/images/Tgn.png" style="width:100%" alt="one">
+    <img src="file:///C:/Users/super/Documents/GitHub/imed1316fall22/images/Blue%20Illustrated%20Snowflake%20Winter%20Photo%20Collage.png" style="width:100%" alt="two">
+    <img src="file:///C:/Users/super/Documents/GitHub/imed1316fall22/images/C.ico" style="width:100%" alt="three">
+  </div>
+</div>
+	<br>
+	<footer style="text-align: center">
 	&copy;CMD Media and Marketing CO. 2022
 </footer>
 	
